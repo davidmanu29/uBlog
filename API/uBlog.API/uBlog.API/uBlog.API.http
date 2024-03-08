@@ -1,0 +1,6 @@
+@uBlog.API_HostAddress = http://localhost:5171
+
+GET {{uBlog.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

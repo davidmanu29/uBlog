@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\uBlog\\uBlog\\API\\uBlog.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\repositories\\implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\repositories\\implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "uBlog.API\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAACEAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T14:59:44.434Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
+              "RelativeToolTip": "uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T14:58:38.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Program.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Program.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Program.cs",
+              "RelativeToolTip": "uBlog.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T13:50:00.476Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
