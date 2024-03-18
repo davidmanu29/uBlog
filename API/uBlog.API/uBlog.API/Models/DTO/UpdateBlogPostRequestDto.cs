@@ -1,7 +1,7 @@
-﻿namespace uBlog.API.Models.DTO {
-
-    public class UpdateBlogPostRequestDto {
-
+﻿namespace uBlog.API.Models.DTO 
+{
+    public class UpdateBlogPostRequestDto 
+    {
         public string Title { get; set; }
 
         public string ShortDescription { get; set; }

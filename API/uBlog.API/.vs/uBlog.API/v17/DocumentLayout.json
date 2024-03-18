@@ -3,24 +3,8 @@
   "WorkspaceRootPath": "D:\\uBlog\\uBlog\\API\\uBlog.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\repositories\\implementation\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\repositories\\implementation\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\repositories\\interface\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\repositories\\interface\\iblogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\repositories\\implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\repositories\\implementation\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,66 +23,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BlogPostRepository.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
-              "RelativeToolTip": "uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA3AAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Program.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Program.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Program.cs",
+              "RelativeToolTip": "uBlog.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T23:39:48.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "IBlogPostRepository.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Interface\\IBlogPostRepository.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Repositories\\Interface\\IBlogPostRepository.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Interface\\IBlogPostRepository.cs",
-              "RelativeToolTip": "uBlog.API\\Repositories\\Interface\\IBlogPostRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T23:29:44.2Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
-              "RelativeToolTip": "uBlog.API\\Repositories\\Implementation\\CategoryRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAC8AAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T23:15:25.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "uBlog.API\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T23:06:34.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BlogPostsController.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\BlogPostsController.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Controllers\\BlogPostsController.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\BlogPostsController.cs",
-              "RelativeToolTip": "uBlog.API\\Controllers\\BlogPostsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-17T22:04:44.152Z",
+              "WhenOpened": "2024-03-18T12:37:16.316Z",
               "EditorCaption": ""
             }
           ]

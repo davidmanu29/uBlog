@@ -3,22 +3,26 @@ using uBlog.API.Models.Domain;
 using uBlog.API.Models.DTO;
 using uBlog.API.Repositories.Interface;
 
-namespace uBlog.API.Controllers {
+namespace uBlog.API.Controllers 
+{
 
     [Route("api/[controller]")]
     [ApiController]
-    public class BlogPostsController : ControllerBase {
+    public class BlogPostsController : ControllerBase 
+    {
 
         private readonly IBlogPostRepository _blogPostRepository;
 
-        public BlogPostsController(IBlogPostRepository blogPostRepository) {
+        public BlogPostsController(IBlogPostRepository blogPostRepository) 
+        {
             this._blogPostRepository = blogPostRepository;
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequestDto request) {
-
-            var blogPost = new BlogPost {
+        public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequestDto request)
+        {
+            var blogPost = new BlogPost 
+            {
 
                 Author = request.Author,
                 Content = request.Content,
@@ -32,7 +36,8 @@ namespace uBlog.API.Controllers {
 
             blogPost = await _blogPostRepository.CreateAsync(blogPost);
 
-            var response = new BlogPostDto {
+            var response = new BlogPostDto 
+            {
                 Id = blogPost.Id,
                 Author = blogPost.Author,
                 Content = blogPost.Content,
@@ -45,17 +50,18 @@ namespace uBlog.API.Controllers {
             };
 
             return Ok(response);
-
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllBlogPosts() {
-
+        public async Task<IActionResult> GetAllBlogPosts() 
+        {
             var blogPosts = await _blogPostRepository.GetAllAsync();
             
             var response = new List<BlogPostDto>();
-            foreach(var blogPost in blogPosts) {
-                response.Add(new BlogPostDto {
+            foreach(var blogPost in blogPosts) 
+            {
+                response.Add(new BlogPostDto 
+                {
                     Id = blogPost.Id,
                     Author = blogPost.Author,
                     Content = blogPost.Content,
@@ -73,13 +79,15 @@ namespace uBlog.API.Controllers {
 
         [HttpGet]
         [Route("{id:Guid}")]
-        public async Task<IActionResult> GetBlogPostById([FromRoute] Guid id) {
+        public async Task<IActionResult> GetBlogPostById([FromRoute] Guid id) 
+        {
 
             var existingBlogPost = await _blogPostRepository.GetById(id);
 
             if (existingBlogPost is null) return NotFound();
 
-            var response = new BlogPostDto{
+            var response = new BlogPostDto 
+            {
                 Id = existingBlogPost.Id,
                 Author = existingBlogPost.Author,
                 Content = existingBlogPost.Content,
@@ -96,9 +104,10 @@ namespace uBlog.API.Controllers {
 
         [HttpPut]
         [Route("{id:Guid}")]
-        public async Task<IActionResult> UpdateBlogPost([FromRoute] Guid id, UpdateBlogPostRequestDto request) {
-
-            var blogPost = new BlogPost {
+        public async Task<IActionResult> UpdateBlogPost([FromRoute] Guid id, UpdateBlogPostRequestDto request) 
+        {
+            var blogPost = new BlogPost 
+            {
                Id = id,
                Author = request.Author,
                Content = request.Content,
@@ -114,7 +123,8 @@ namespace uBlog.API.Controllers {
 
             if (blogPost is null) return NotFound();
 
-            var response = new BlogPostDto {
+            var response = new BlogPostDto 
+            {
                 Id = blogPost.Id,
                 Author = blogPost.Author,
                 Content = blogPost.Content,
@@ -131,13 +141,15 @@ namespace uBlog.API.Controllers {
 
         [HttpDelete]
         [Route("{id:Guid}")]
-        public async Task<IActionResult> DeleteBlogPost([FromRoute] Guid id) {
+        public async Task<IActionResult> DeleteBlogPost([FromRoute] Guid id) 
+        {
 
             var blogPost = await _blogPostRepository.DeleteAsnyc(id);
 
             if (blogPost is null) return NotFound();
 
-            var response = new BlogPostDto {
+            var response = new BlogPostDto 
+            {
                 Id = id,
                 Author = blogPost.Author,
                 Content = blogPost.Content,

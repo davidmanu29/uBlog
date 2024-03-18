@@ -1,6 +1,7 @@
-﻿namespace uBlog.API.Models.Domain {
-    public class BlogPost {
-
+﻿namespace uBlog.API.Models.Domain 
+{
+    public class BlogPost 
+    {
         public Guid Id { get; set; }
 
         public string Title {  get; set; }

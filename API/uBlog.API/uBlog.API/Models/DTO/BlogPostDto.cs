@@ -1,7 +1,7 @@
-﻿namespace uBlog.API.Models.DTO {
-
-    public class BlogPostDto {
-
+﻿namespace uBlog.API.Models.DTO 
+{
+    public class BlogPostDto 
+    {
         public Guid Id { get; set; }
 
         public string Title { get; set; }
