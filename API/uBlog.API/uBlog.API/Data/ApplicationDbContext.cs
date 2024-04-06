@@ -15,7 +15,5 @@ namespace uBlog.API.Data
 
 
         }
-
-        
     }
 }

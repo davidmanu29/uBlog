@@ -10,20 +10,20 @@ namespace uBlog.API.Controllers
     [ApiController]
     public class BlogPostsController : ControllerBase 
     {
-
         private readonly IBlogPostRepository _blogPostRepository;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public BlogPostsController(IBlogPostRepository blogPostRepository) 
+        public BlogPostsController(IBlogPostRepository blogPostRepository, ICategoryRepository categoryRepository) 
         {
             this._blogPostRepository = blogPostRepository;
+            this._categoryRepository = categoryRepository;
         }
 
         [HttpPost]
         public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequestDto request)
         {
-            var blogPost = new BlogPost 
+            var blogPost = new BlogPost
             {
-
                 Author = request.Author,
                 Content = request.Content,
                 FeaturedImageUrl = request.FeaturedImageUrl,
@@ -32,11 +32,21 @@ namespace uBlog.API.Controllers
                 ShortDescription = request.ShortDescription,
                 Title = request.Title,
                 UrlHandle = request.UrlHandle,
+                Categories = new List<Category>()
             };
+
+            foreach(var categoryGuid in request.Categories)
+            {
+                var existingCategory = await _categoryRepository.GetById(categoryGuid);
+                if(existingCategory != null)
+                {
+                    blogPost.Categories.Add(existingCategory);
+                }
+            }
 
             blogPost = await _blogPostRepository.CreateAsync(blogPost);
 
-            var response = new BlogPostDto 
+            var response = new BlogPostDto
             {
                 Id = blogPost.Id,
                 Author = blogPost.Author,
@@ -47,6 +57,12 @@ namespace uBlog.API.Controllers
                 ShortDescription = blogPost.ShortDescription,
                 Title = blogPost.Title,
                 UrlHandle = blogPost.UrlHandle,
+                Categories = blogPost.Categories.Select(x => new CategoryDto
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle
+                }).ToList()
             };
 
             return Ok(response);
@@ -71,6 +87,12 @@ namespace uBlog.API.Controllers
                     ShortDescription = blogPost.ShortDescription,
                     Title = blogPost.Title,
                     UrlHandle = blogPost.UrlHandle,
+                    Categories = blogPost.Categories.Select(x => new CategoryDto
+                    {
+                        Id = x.Id,
+                        Name = x.Name,
+                        UrlHandle = x.UrlHandle
+                    }).ToList()
                 });
             }
             
@@ -82,7 +104,7 @@ namespace uBlog.API.Controllers
         public async Task<IActionResult> GetBlogPostById([FromRoute] Guid id) 
         {
 
-            var existingBlogPost = await _blogPostRepository.GetById(id);
+            var existingBlogPost = await _blogPostRepository.GetByIdAsync(id);
 
             if (existingBlogPost is null) return NotFound();
 
@@ -97,6 +119,42 @@ namespace uBlog.API.Controllers
                 ShortDescription = existingBlogPost.ShortDescription,
                 Title = existingBlogPost.Title,
                 UrlHandle = existingBlogPost.UrlHandle,
+                Categories = existingBlogPost.Categories.Select(x => new CategoryDto
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle
+                }).ToList()
+            };
+
+            return Ok(response);
+        }
+
+        [HttpGet]
+        [Route("{urlHandle:string}")]
+        public async Task<IActionResult> GetBlogPostByUrlHandle([FromRoute] string urlHandle)
+        {
+            var blogPost = await _blogPostRepository.GetByUrlHandleAsync(urlHandle);
+
+            if (blogPost is null) return NotFound();
+
+            var response = new BlogPostDto
+            {
+                Id = blogPost.Id,
+                Author = blogPost.Author,
+                Content = blogPost.Content,
+                FeaturedImageUrl = blogPost.FeaturedImageUrl,
+                IsVisible = blogPost.IsVisible,
+                PublishedDate = blogPost.PublishedDate,
+                ShortDescription = blogPost.ShortDescription,
+                Title = blogPost.Title,
+                UrlHandle = blogPost.UrlHandle,
+                Categories = blogPost.Categories.Select(x => new CategoryDto
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle
+                }).ToList()
             };
 
             return Ok(response);
@@ -117,7 +175,17 @@ namespace uBlog.API.Controllers
                ShortDescription = request.ShortDescription,
                Title = request.Title,
                UrlHandle = request.UrlHandle,
+               Categories = new List<Category>()
             };
+
+            foreach (var categoryGuid in request.Categories)
+            {
+                var existingCategory = await _categoryRepository.GetById(categoryGuid);
+                if (existingCategory != null)
+                {
+                    blogPost.Categories.Add(existingCategory);
+                }
+            }
 
             blogPost = await _blogPostRepository.UpdateAsync(blogPost);
 
@@ -132,8 +200,14 @@ namespace uBlog.API.Controllers
                 IsVisible = blogPost.IsVisible,
                 PublishedDate = blogPost.PublishedDate,
                 ShortDescription = blogPost.ShortDescription,
-                Title = blogPost.Title,
+                Title = blogPost.Title, 
                 UrlHandle = blogPost.UrlHandle,
+                Categories = blogPost.Categories.Select(x => new CategoryDto
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    UrlHandle = x.UrlHandle
+                }).ToList()
             };
 
             return Ok(response);

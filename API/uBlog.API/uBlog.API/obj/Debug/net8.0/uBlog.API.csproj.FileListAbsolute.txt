@@ -135,3 +135,10 @@ D:\uBlog\uBlog\API\uBlog.API\uBlog.API\obj\Debug\net8.0\refint\uBlog.API.dll
 D:\uBlog\uBlog\API\uBlog.API\uBlog.API\obj\Debug\net8.0\uBlog.API.pdb
 D:\uBlog\uBlog\API\uBlog.API\uBlog.API\obj\Debug\net8.0\uBlog.API.genruntimeconfig.cache
 D:\uBlog\uBlog\API\uBlog.API\uBlog.API\obj\Debug\net8.0\ref\uBlog.API.dll
+D:\uBlog\uBlog\API\uBlog.API\uBlog.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\uBlog\uBlog\API\uBlog.API\uBlog.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\uBlog\uBlog\API\uBlog.API\uBlog.API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\uBlog\uBlog\API\uBlog.API\uBlog.API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\uBlog\uBlog\API\uBlog.API\uBlog.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+D:\uBlog\uBlog\API\uBlog.API\uBlog.API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+D:\uBlog\uBlog\API\uBlog.API\uBlog.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

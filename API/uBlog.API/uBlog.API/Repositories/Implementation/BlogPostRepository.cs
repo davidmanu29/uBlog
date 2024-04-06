@@ -26,7 +26,6 @@ namespace uBlog.API.Repositories.Implementation
 
         public async Task<BlogPost?> DeleteAsnyc(Guid id)
         {
-
             var existingBlogPost = await _dbContext.BlogPosts.FirstOrDefaultAsync(x => x.Id == id);
 
             if (existingBlogPost is null) return null;
@@ -38,28 +37,32 @@ namespace uBlog.API.Repositories.Implementation
 
         public async Task<IEnumerable<BlogPost>> GetAllAsync() 
         {
-
-            return await _dbContext.BlogPosts.ToListAsync();
+            return await _dbContext.BlogPosts.Include(x => x.Categories).ToListAsync();
         }
 
-        public async Task<BlogPost?> GetById(Guid id) 
+        public async Task<BlogPost?> GetByIdAsync(Guid id) 
         {
-            return await _dbContext.BlogPosts.FirstOrDefaultAsync(x => x.Id == id);
+            return await _dbContext.BlogPosts.Include(x => x.Categories).FirstOrDefaultAsync(x => x.Id == id);
+        }
+
+        public async Task<BlogPost?> GetByUrlHandleAsync(string urlHandle)
+        {
+            return await _dbContext.BlogPosts.Include(x => x.Categories).FirstOrDefaultAsync(x => x.UrlHandle == urlHandle);
         }
 
         public async Task<BlogPost?> UpdateAsync(BlogPost blogPost) 
         {
+            var existingBlogPost = await _dbContext.BlogPosts.Include(x => x.Categories).FirstOrDefaultAsync(x => x.Id == blogPost.Id);
 
-            var existingBlogPost = await _dbContext.BlogPosts.FirstOrDefaultAsync(x => x.Id == blogPost.Id);
+            if (existingBlogPost == null) return null;
 
-            if (existingBlogPost != null) 
-            {
-                _dbContext.Entry(existingBlogPost).CurrentValues.SetValues(blogPost);
-                await _dbContext.SaveChangesAsync();
-                return blogPost;
-            }
+            _dbContext.Entry(existingBlogPost).CurrentValues.SetValues(blogPost);
 
-            return null;
+            existingBlogPost.Categories = blogPost.Categories;
+
+            await _dbContext.SaveChangesAsync();
+
+            return blogPost;
         }
     }
 }

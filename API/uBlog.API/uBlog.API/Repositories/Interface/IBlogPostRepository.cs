@@ -8,11 +8,13 @@ namespace uBlog.API.Repositories.Interface
 
         Task<IEnumerable<BlogPost>> GetAllAsync();
 
-        Task<BlogPost?> GetById(Guid id);
+        Task<BlogPost?> GetByIdAsync(Guid id);
 
         Task<BlogPost?> UpdateAsync(BlogPost blogPost);
 
         Task<BlogPost?> DeleteAsnyc(Guid id);
+
+        Task<BlogPost?> GetByUrlHandleAsync(string urlHandle);
 
     }
 }
