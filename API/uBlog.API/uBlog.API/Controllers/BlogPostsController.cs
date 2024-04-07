@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using uBlog.API.Models.Domain;
 using uBlog.API.Models.DTO;
 using uBlog.API.Repositories.Interface;
@@ -20,6 +21,7 @@ namespace uBlog.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateBlogPost([FromBody] CreateBlogPostRequestDto request)
         {
             var blogPost = new BlogPost
@@ -131,7 +133,7 @@ namespace uBlog.API.Controllers
         }
 
         [HttpGet]
-        [Route("{urlHandle:string}")]
+        [Route("{urlHandle}")]
         public async Task<IActionResult> GetBlogPostByUrlHandle([FromRoute] string urlHandle)
         {
             var blogPost = await _blogPostRepository.GetByUrlHandleAsync(urlHandle);
@@ -162,6 +164,7 @@ namespace uBlog.API.Controllers
 
         [HttpPut]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> UpdateBlogPost([FromRoute] Guid id, UpdateBlogPostRequestDto request) 
         {
             var blogPost = new BlogPost 
@@ -215,6 +218,7 @@ namespace uBlog.API.Controllers
 
         [HttpDelete]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer")]   
         public async Task<IActionResult> DeleteBlogPost([FromRoute] Guid id) 
         {
 

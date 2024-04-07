@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using uBlog.API.Models.Domain;
 using uBlog.API.Models.DTO;
 using uBlog.API.Repositories.Interface;
@@ -20,6 +21,7 @@ namespace uBlog.API.Controllers
 
         //CREATE
         [HttpPost]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryRequestDto request) 
         {
             var category = new Category 
@@ -51,10 +53,8 @@ namespace uBlog.API.Controllers
             var response = new List<CategoryDto>();
             foreach (var category in categories) 
             {
-
                 response.Add(new CategoryDto 
                 {
-
                     Id = category.Id,
                     Name = category.Name,
                     UrlHandle = category.UrlHandle
@@ -90,6 +90,7 @@ namespace uBlog.API.Controllers
         //https://localhost:7249/api/categories/{id}
         [HttpPut]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> UpdateCategory([FromRoute] Guid id, UpdateCategoryRequestDto request) 
         {
 
@@ -117,6 +118,7 @@ namespace uBlog.API.Controllers
         // DELETE
         [HttpDelete]
         [Route("{id:Guid}")]
+        [Authorize(Roles = "Writer")]
         public async Task<IActionResult> DeleteCategory([FromRoute] Guid id) 
         {
             var category = await _categoryRepository.DeleteAsnyc(id);

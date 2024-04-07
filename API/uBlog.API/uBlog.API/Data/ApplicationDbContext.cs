@@ -10,7 +10,7 @@ namespace uBlog.API.Data
 
         public DbSet<Category> Categories { get; set; }
 
-        public ApplicationDbContext(DbContextOptions options) : base(options) 
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) 
         {
 
 
