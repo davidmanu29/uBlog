@@ -36,7 +36,6 @@ namespace uBlog.API.Controllers
                     var roles = await userManager.GetRolesAsync(identityUser);
                     var jwtToken = tokenRepository.CreateJwtToken(identityUser, roles.ToList());
 
-
                     var response = new LoginResponseDto()
                     {
                         Email = request.Email,
@@ -69,7 +68,6 @@ namespace uBlog.API.Controllers
 
             if (identityResult.Succeeded)
             {
-                //add role to user (Reader)
                 identityResult = await userManager.AddToRoleAsync(user, "Reader");
 
                 if (identityResult.Succeeded)
@@ -157,7 +155,7 @@ namespace uBlog.API.Controllers
         }
 
         [HttpGet]
-        public Task <IActionResult> GetAllUsers()
+        public async Task <IActionResult> GetAllUsers()
         {
             var users = userManager.Users;
             var response = new List<IdentityUser>();
