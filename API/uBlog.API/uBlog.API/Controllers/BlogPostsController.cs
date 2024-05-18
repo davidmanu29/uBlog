@@ -6,7 +6,6 @@ using uBlog.API.Repositories.Interface;
 
 namespace uBlog.API.Controllers 
 {
-
     [Route("api/[controller]")]
     [ApiController]
     public class BlogPostsController : ControllerBase 

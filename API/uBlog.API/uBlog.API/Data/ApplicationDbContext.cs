@@ -5,7 +5,6 @@ namespace uBlog.API.Data
 {
     public class ApplicationDbContext : DbContext 
     {
-
         public DbSet<BlogPost> BlogPosts { get; set; }
 
         public DbSet<Category> Categories { get; set; }

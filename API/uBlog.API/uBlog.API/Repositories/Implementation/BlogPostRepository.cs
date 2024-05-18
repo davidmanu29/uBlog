@@ -17,7 +17,6 @@ namespace uBlog.API.Repositories.Implementation
 
         public async Task<BlogPost> CreateAsync(BlogPost blogPost) 
         {
-           
             await _dbContext.BlogPosts.AddAsync(blogPost);
             await _dbContext.SaveChangesAsync();
 

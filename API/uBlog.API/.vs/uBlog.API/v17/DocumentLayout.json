@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "D:\\uBlog\\uBlog\\API\\uBlog.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\data\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\data\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\controllers\\blogpostscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\models\\domain\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\models\\domain\\blogpost.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\models\\domain\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\models\\domain\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\repositories\\implementation\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\repositories\\implementation\\blogpostrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|d:\\ublog\\ublog\\api\\ublog.api\\ublog.api\\data\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BD368D2-9838-41D4-A997-02716BCEEE1A}|uBlog.API\\uBlog.API.csproj|solutionrelative:ublog.api\\data\\authdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,76 +34,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthDbContext.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Data\\AuthDbContext.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Data\\AuthDbContext.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Data\\AuthDbContext.cs",
-              "RelativeToolTip": "uBlog.API\\Data\\AuthDbContext.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwDkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T14:43:12.311Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "uBlog.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "uBlog.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-15T14:44:47.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "BlogPostsController.cs",
               "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\BlogPostsController.cs",
               "RelativeDocumentMoniker": "uBlog.API\\Controllers\\BlogPostsController.cs",
               "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\BlogPostsController.cs",
               "RelativeToolTip": "uBlog.API\\Controllers\\BlogPostsController.cs",
-              "ViewState": "AQIAAKMAAAAAAAAAAAAowPIAAAAJAAAA",
+              "ViewState": "AQIAAKIAAAAAAAAAAAAowBYAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:52:54.888Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "uBlog.API\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADYAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T12:50:41.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "uBlog.API\\Controllers\\AuthController.cs",
-              "ViewState": "AQIAAD0AAAAAAAAAAAAewEgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-07T11:27:20.036Z",
+              "WhenOpened": "2024-04-12T20:14:43.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Program.cs",
-              "RelativeDocumentMoniker": "uBlog.API\\Program.cs",
-              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Program.cs",
-              "RelativeToolTip": "uBlog.API\\Program.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAewDIAAAAAAAAA",
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Models\\Domain\\Category.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Models\\Domain\\Category.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Models\\Domain\\Category.cs",
+              "RelativeToolTip": "uBlog.API\\Models\\Domain\\Category.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-06T22:27:01.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-12T20:14:01.748Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BlogPost.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Models\\Domain\\BlogPost.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Models\\Domain\\BlogPost.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Models\\Domain\\BlogPost.cs",
+              "RelativeToolTip": "uBlog.API\\Models\\Domain\\BlogPost.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAADwvxYAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T20:11:24.202Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlogPostRepository.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
+              "RelativeToolTip": "uBlog.API\\Repositories\\Implementation\\BlogPostRepository.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAswBAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T20:05:40.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AuthDbContext.cs",
+              "DocumentMoniker": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Data\\AuthDbContext.cs",
+              "RelativeDocumentMoniker": "uBlog.API\\Data\\AuthDbContext.cs",
+              "ToolTip": "D:\\uBlog\\uBlog\\API\\uBlog.API\\uBlog.API\\Data\\AuthDbContext.cs",
+              "RelativeToolTip": "uBlog.API\\Data\\AuthDbContext.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-12T20:05:35.293Z"
             }
           ]
         }
