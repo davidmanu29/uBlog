@@ -12,13 +12,23 @@
                     <th>Title</th>
                     <th>Short Description</th>
                     <th>Date Published</th>
+                    <th>Categories</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let blogPosts of blogPosts">
-                    <td>{{blogPosts.title}}</td>
-                    <td>{{blogPosts.shortDescription}}</td>
-                    <td>{{blogPosts.publishedDate}}</td>
+                <tr *ngFor="let blogPost of blogPosts">
+                    <td>{{blogPost.title}}</td>
+                    <td>{{blogPost.shortDescription}}</td>
+                    <td>{{blogPost.publishedDate}}</td>
+                    <td>
+                        <span *ngFor="let category of blogPost.categories">
+                            <span class="badge bg-secondary me-2">{{category.name}}</span>
+                        </span>
+                    </td>
+                    <td>
+                        <a class = "btn btn-light" [routerLink]="['/admin/blogposts', blogPost.id]">Edit</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
